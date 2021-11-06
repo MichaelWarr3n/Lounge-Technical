@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gnD_g.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.swiper-and-thumb-container {
+    width: 610px;
+    overflow: hidden;
+}
+
+.gallery-top .swiper-slide {
+    border-radius: 5px;
+    width: auto;
+}
+
+.gallery-top .swiper-slide img {
+    border-radius: 5px;
+    width: 300px;
+    height: auto;
+}
+
+.gallery-thumbs .swiper-slide img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.gallery-thumbs .swiper-slide img:hover {
+    cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide {
+    opacity: 0.6;
+}
+
+.gallery-thumbs div.swiper-slide-thumb-active {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    border-bottom: 1px black solid;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+}
+
+.gallery-thumbs div.swiper-slide-thumb-active ~ .swiper-slide-thumb-active {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-right: 1px black solid;
+    border-left: none;
+}
+
+.new-tag {
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    --swiper-navigation-size: 8px;
+    color: #000;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 40%;
+}
+
+.swiper-button-next{
+    left: 580px;
+}
+
+.model-selector {
+    position: absolute;
+    z-index: 2;
+    color: #000;
+    top: 60%;
+    left: 20px;
+}
+
+.model-selector div {
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    width: max-content;
+}
+
+.model-selector div:hover {
+    background-color: #FFF;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+div.active-model {
+    background-color: #FFF;
+}
